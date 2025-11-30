@@ -157,4 +157,5 @@
   (lib (name "Battery")(type "KiCad")(uri "/run/media/nitish/01DBE56922159C50/Users/akkns/Kicad/kicad-footprints-master/Battery.pretty")(options "")(descr ""))
   (lib (name "Audio_Module")(type "KiCad")(uri "/run/media/nitish/01DBE56922159C50/Users/akkns/Kicad/kicad-footprints-master/Audio_Module.pretty")(options "")(descr ""))
   (lib (name "OLED")(type "KiCad")(uri "/run/media/nitish/01DBE56922159C50/Users/akkns/Kicad/OLED")(options "")(descr ""))
+  (lib (name "Backlight")(type "KiCad")(uri "/run/media/nitish/01DBE56922159C50/Users/akkns/Kicad/Backlight")(options "")(descr ""))
 )
