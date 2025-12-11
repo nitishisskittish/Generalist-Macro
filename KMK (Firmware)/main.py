@@ -1,3 +1,8 @@
+# To-Do List:
+# Make it so that holding down the encoder and turning adjusts RGB Brightness.
+# Make it so that holding down rightmost key and turning encoder adjusts RGB Color.
+# Make it so that OLED Displays Brightness level when being adjusted 
+
 import board
 import digitalio
 from kmk.kmk_keyboard import KMKKeyboard
@@ -14,29 +19,29 @@ keyboard = KMKKeyboard()
 
 keyboard.extensions.append(MediaKeys())
 
-#RGB LEDs:
+# RGB LEDs:
 rgb = RGB(
     pixel_pin=board.D7,
     num_pixels=16,
-    hue=203,
-    sat=250, 
-    val=200, 
+    hue=0,
+    sat=0, 
+    val=255, 
     mode=RGBModes.STATIC_COLOR,
     val_default=72
 )
 keyboard.extensions.append(rgb)
 
-# 3. OLED Volume Display
+# OLED Volume Display
 display_ext = Display(
     i2c_port=board.I2C(),
     display=VolumeDisplay(),
 )
 keyboard.extensions.append(display_ext)
 
-# 4. Layers (Right now I only have one, but I may add more later)
+# Layers (Right now I only have one, but I may add more later)
 keyboard.modules.append(Layers())
 
-# 5. Rotary Encoder
+# Rotary Encoder
 keyboard.modules.append(Encoder(
     pins=((board.D9, board.D10, None),),
     tap_max=1000, 
@@ -55,7 +60,7 @@ keyboard.diode_orientation = DiodeOrientation.COL2ROW
 KEYMAP = [
     [
         KC.MPRV, KC.W,    KC.MNXT, KC.MUTE,
-        KC.A,    KC.S,    KC.D,    KC.LGUI(KC.S) # Windows Key + S, shorcut to open Spotify on my System. I may change this to switch between keymap layers later, if I ever add more.
+        KC.A,    KC.S,    KC.D,    KC.LGUI(KC.S) # Custom shortcut key for opening spotify on my system
     ]
 ]
 keyboard.keymaps = KEYMAP
