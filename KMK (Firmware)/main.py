@@ -1,4 +1,4 @@
-# To-Do List:
+# Future Update List:
 # Make it so that holding down the encoder and turning adjusts RGB Brightness.
 # Make it so that holding down rightmost key and turning encoder adjusts RGB Color.
 # Make it so that OLED Displays Brightness level when being adjusted 
