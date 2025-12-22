@@ -1,0 +1,62 @@
+** Drc report for Generalist_Macro.kicad_pcb **
+** Created on 2025-11-29T20:51:28-0500 **
+
+** Found 8 DRC violations **
+[silk_overlap]: Silkscreen overlap
+    Rule: board setup constraints silk; warning
+    @(70.0500 mm, 86.8315 mm): Reference field of D4
+    @(69.3500 mm, 86.1315 mm): Segment of D4 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(56.4100 mm, 72.8090 mm): Segment of U1 on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(74.1900 mm, 72.8090 mm): Segment of U1 on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6350 mm)
+    Rule: board setup constraints silk text height; warning
+    @(56.8000 mm, 52.3000 mm): Reference field of U1
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(55.1282 mm, 53.8367 mm): Rectangle on Edge.Cuts
+    @(58.3150 mm, 55.6640 mm): Arc of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(55.1282 mm, 53.8367 mm): Rectangle on Edge.Cuts
+    @(72.2850 mm, 55.6640 mm): Arc of U1 on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(55.1282 mm, 53.8367 mm): Rectangle on Edge.Cuts
+    @(56.3500 mm, 54.0000 mm): Circle of U1 on F.Silkscreen
+[track_dangling]: Track has unconnected end
+    Local override; warning
+    @(62.7357 mm, 106.8357 mm): Track [Net-(D8-A)] on F.Cu, length 0.1357 mm
+
+** Found 6 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(76.0812 mm, 80.1188 mm): Track [GND] on B.Cu, length 12.7721 mm
+    @(89.3000 mm, 104.1500 mm): Pad 3 [GND] of D25 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(103.2000 mm, 88.2275 mm): Track [GND] on B.Cu, length 1.3046 mm
+    @(108.3100 mm, 104.1500 mm): Pad 3 [GND] of D24 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(127.3000 mm, 104.1500 mm): Pad 3 [GND] of D23 on F.Cu
+    @(122.2000 mm, 88.2375 mm): Track [GND] on B.Cu, length 1.2905 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(142.2025 mm, 87.1000 mm): Track [GND] on B.Cu, length 2.0500 mm
+    @(146.3900 mm, 104.1500 mm): Pad 3 [GND] of D22 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(142.2025 mm, 87.1000 mm): Track [GND] on B.Cu, length 4.9975 mm
+    @(159.9500 mm, 90.7750 mm): Pad 3 [GND] of D21 on F.Cu
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(91.0000 mm, 80.8000 mm): Track [Column 1] on B.Cu, length 0.4243 mm
+    @(91.3100 mm, 92.4400 mm): PTH pad 2 [Column 1] of SW5
+
+** Found 0 Footprint errors **
+
+** End of Report **
