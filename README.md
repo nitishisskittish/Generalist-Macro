@@ -23,7 +23,7 @@ I made my PCB in KiCad. I got the bangboo silkscreen arts from the [Zenless Zone
 - Schematic:
 
   <img src=Images/Schematic.png alt="Schematic" width="500"/>
-- Schematic:
+- PCB:
 
   <img src=Images/PCB.png alt="PCB" width="500"/>
 - My favorite part of the whole project tbh, made me feel very smart. Also if you're interested the numbers at the very bottom are binary, although it doesn’t spell out anything that interesting
